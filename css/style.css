@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+}
+input,
+button,
+textarea {
+  outline: none;
+  border: none;
+}
+
+body {
+  background: #f1f1f1;
+}
+
+li {
+  list-style: none;
+}
+
+em {
+  font-style: normal;
+}
+
+.shadow {
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.wrap {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  padding-bottom: 10px;
+  background: #fff;
+}
+
+.nav h2 {
+  font-size: 24px;
+  color: #a0a9ae;
+}
+
+.nav span {
+  background: url(../images/ico-mamago.png) no-repeat;
+  background-position: -193px -6px;
+  background-size: 310px 450px;
+  display: block;
+  width: 28px;
+  height: 28px;
+}
+
+.mainContent {
+  margin-bottom: 10px;
+  background: #fff;
+}
+
+.mainTitle {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+
+.mainTitle > div {
+  width: 50%;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.mainTitle span {
+  font-size: 17px;
+  color: #444;
+}
+
+.mainTitle em {
+  background: url(../images/ico-down.svg) no-repeat;
+  width: 8px;
+  height: 10px;
+}
+
+.titleCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url(../images/ico-mamago.png) no-repeat;
+  background-position: -110px -300px;
+  background-size: 300px 450px;
+  width: 50px;
+  height: 29px;
+}
+
+.inputBox {
+  position: relative;
+}
+
+.inputBox textarea {
+  width: 100%;
+  padding: 20px;
+  font-size: 18px;
+}
+
+.inputBox em {
+  display: block;
+  background: url(../images/ico-mamago.png) no-repeat;
+  background-position: 4px -67px;
+  background-size: 300px 450px;
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  top: 20px;
+  right: 20px;
+}
+
+.icoBox {
+  padding: 0 20px 20px 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.icoBox .itemSapn {
+  display: block;
+  height: 44px;
+  width: 36px;
+  background: url(../images/ico-mamago.png) no-repeat;
+}
+
+.icoBox .item1 {
+  background-position: -143px -112px;
+  background-size: 300px 450px;
+}
+.icoBox .item2 {
+  background-position: -184px -112px;
+  background-size: 300px 450px;
+}
+.icoBox .item3 {
+  background-position: -98px -112px;
+  background-size: 300px 450px;
+}
+.icoBox .item4 {
+  background-position: -225px -113px;
+  background-size: 300px 450px;
+}
+.icoBox .item1:hover {
+  background-position: -143px -196px;
+}
+
+.icoBox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icoBox .item {
+  display: flex;
+  gap: 15px;
+}
+
+.icoBox .submit {
+  background: #1eda69;
+  padding: 10px 15px;
+  border-radius: 12px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.icoBox button::after {
+  content: "";
+  display: block;
+  background: url(../images/ico-mamago.png) no-repeat;
+  background-position: -139px 2px;
+  background-size: 300px 450px;
+  width: 16px;
+  height: 20px;
+}
+
+.icoBox .more {
+  content: "";
+  display: block;
+  background: url(../images/ico-mamago.png) no-repeat;
+  background-position: -51px -193px;
+  background-size: 300px 450px;
+  width: 17px;
+  height: 44px;
+}
+
+.mainList {
+  position: relative;
+  background: #fdfdff;
+  height: 100%;
+}
+
+.listButton {
+  border: 1px solid #ccc;
+  width: 71px;
+  height: 30px;
+  border-radius: 17.5px;
+  text-align: center;
+  margin: 0 0 0 auto;
+}
+
+.mainList {
+  padding: 20px;
+}
+
+.detailItem {
+  margin-bottom: 30px;
+}
+
+.listButton span {
+  font-size: 14px;
+  color: #444;
+}
+
+.listTitle {
+  margin-bottom: 5px;
+}
+
+.listTitle strong {
+  font-size: 18px;
+  color: #0fb74c;
+}
+.listTitle span {
+  font-size: 14px;
+  color: #999;
+}
+
+.listContent em {
+  font-size: 11px;
+  color: #444;
+}
+
+.listContent span {
+  font-size: 16px;
+  color: #444;
+}

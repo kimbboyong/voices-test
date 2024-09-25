@@ -4,57 +4,168 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    .wrap {
-      width: 100%;
-      max-width: 500px;
-      margin: auto;
-    }
-
-    .inner {
-      height: 150px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 10px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-
-    button {
-      padding: 5px;
-      border: none;
-      background: #ccc;
-      border-radius: 4px;
-      font-size: 20px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background: #000;
-      color: #fff;
-    }
-  </style>
+  <style></style>
   <body>
-    <div class="wrap">
-      <div class="inner">
-        <input id="code_reddit" type="hidden" value="Một hai ba" />
-        <h2>Một hai ba</h2>
-        <button class="btn" onclick="g_gout()">번역</button>
+    <div class="container">
+      <div class="wrap">
+        <div class="nav">
+          <h2>mamago</h2>
+          <span></span>
+        </div>
+
+        <section class="mainContent">
+          <div class="mainTitle">
+            <div class="titleKo">
+              <span>한국어</span>
+              <em></em>
+            </div>
+            <div class="titleVi">
+              <span>베트남어</span>
+              <em></em>
+            </div>
+            <button class="titleCenter"></button>
+          </div>
+
+          <div class="mainText">
+            <div class="mainDivide">
+              <div class="inputBox">
+                <textarea
+                  type="text"
+                  placeholder="번역할 내용을 입력하세요."
+                  value="삼가 고인의 명복을 빕니다."
+                >
+삼가 고인의 명복을 빕니다.</textarea
+                >
+                <em></em>
+              </div>
+              <div class="icoBox">
+                <div class="item">
+                  <span class="itemSapn item1"></span>
+                  <span class="itemSapn item2"></span>
+                  <span class="itemSapn item3"></span>
+                </div>
+                <button class="submit">번역</button>
+              </div>
+            </div>
+            <div class="mainDivide shadow">
+              <div class="inputBox">
+                <textarea
+                  id="code_reddit"
+                  type="text"
+                  value="Kính viếng hương hồn cố nhân yên nghỉ nơi chín suối."
+                >
+Kính viếng hương hồn cố nhân yên nghỉ nơi chín suối.</textarea
+                >
+              </div>
+              <div class="icoBox">
+                <div class="item">
+                  <span class="itemSapn item1" onclick="g_gout()"></span>
+                  <span class="itemSapn item2"></span>
+                  <span class="itemSapn item4"></span>
+                </div>
+                <button class="more"></button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="mainList">
+          <div class="listButton">
+            <span>번역 평가</span>
+          </div>
+          <ul class="detailList">
+            <li class="detailItem">
+              <div class="listTitle">
+                <strong>삼가</strong>
+                <span>[삼가]</span>
+              </div>
+              <div class="listContent">
+                <em>1.</em>
+                <span>một cách cẩn trọng</span>
+              </div>
+            </li>
+            <li class="detailItem">
+              <div class="listTitle">
+                <strong>고인</strong>
+                <span>[고:인]</span>
+              </div>
+              <div class="listContent">
+                <em>1.</em>
+                <span>người xưa, cổ nhân</span>
+              </div>
+            </li>
+            <li class="detailItem">
+              <div class="listTitle">
+                <strong>삼가</strong>
+                <span>[삼가]</span>
+              </div>
+              <div class="listContent">
+                <em>1.</em>
+                <span
+                  >một cách thành kính, một cách chân thành, một cách thiết
+                  tha.</span
+                >
+              </div>
+            </li>
+            <li class="detailItem">
+              <div class="listTitle">
+                <strong>빌다</strong>
+                <span>[빌:다]</span>
+              </div>
+              <div class="listContent">
+                <em>1.</em>
+                <span>cầu, cầu mong, cầu khẩn2.cầu xin, van xin</span>
+              </div>
+            </li>
+            <li class="detailItem">
+              <div class="listTitle">
+                <strong>명복</strong>
+                <span>[명복]</span>
+              </div>
+              <div class="listContent">
+                <em>1.</em>
+                <span
+                  >phúc trên thiên đường, phúc nơi suối vàng, phúc ở thế giới
+                  bên kia</span
+                >
+              </div>
+            </li>
+            <li class="detailItem">
+              <div class="listTitle">
+                <strong>고인</strong>
+                <span>[고:인]</span>
+              </div>
+              <div class="listContent">
+                <em>1.</em>
+                <span>người quá cố, cố nhân</span>
+              </div>
+            </li>
+            <li class="detailItem">
+              <div class="listTitle">
+                <strong>빌다</strong>
+                <span>[빌:다]</span>
+              </div>
+              <div class="listContent">
+                <em>1.</em>
+                <span>nxin (ăn), khất thực</span>
+              </div>
+            </li>
+            <li class="detailItem">
+              <div class="listTitle">
+                <strong>삼가다</strong>
+                <span>[삼가다]</span>
+              </div>
+              <div class="listContent">
+                <em>1.</em>
+                <span>dè dặt, thận trọng, cẩn trọng2.kiêng, cử</span>
+              </div>
+            </li>
+          </ul>
+        </section>
       </div>
     </div>
-
     <script src="./index.js"></script>
   </body>
 </html>
