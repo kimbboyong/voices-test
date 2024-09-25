@@ -25,6 +25,11 @@ em {
   font-style: normal;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .shadow {
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
 }
@@ -50,12 +55,12 @@ em {
 }
 
 .nav span {
-  background: url(../images/ico-mamago.png) no-repeat;
-  background-position: -193px -6px;
-  background-size: 310px 450px;
+  background: url(../images/ico-sidebar.png) no-repeat;
+  background-size: contain;
   display: block;
-  width: 28px;
-  height: 28px;
+  width: 20px;
+  height: 13px;
+  margin-top: 10px;
 }
 
 .mainContent {
@@ -94,11 +99,10 @@ em {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: url(../images/ico-mamago.png) no-repeat;
-  background-position: -110px -300px;
-  background-size: 300px 450px;
-  width: 50px;
-  height: 29px;
+  background: url(../images/ico-change.png) no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
 }
 
 .inputBox {
@@ -113,13 +117,12 @@ em {
 
 .inputBox em {
   display: block;
-  background: url(../images/ico-mamago.png) no-repeat;
-  background-position: 4px -67px;
-  background-size: 300px 450px;
+  background: url(../images/ico-close.png) no-repeat;
+  background-size: contain;
   position: absolute;
-  width: 19px;
-  height: 19px;
-  top: 20px;
+  width: 14px;
+  height: 14px;
+  top: 27px;
   right: 20px;
 }
 
@@ -132,12 +135,21 @@ em {
   display: block;
   height: 44px;
   width: 36px;
-  background: url(../images/ico-mamago.png) no-repeat;
+  /* background: url(../images/ico-mamago.png) no-repeat; */
+}
+
+.icoBox figure {
+  max-width: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.icoBox span {
+  text-indent: -9999px;
 }
 
 .icoBox .item1 {
-  background-position: -143px -112px;
-  background-size: 300px 450px;
+  background: url(../images/ico-speaker.png) no-repeat;
 }
 .icoBox .item2 {
   background-position: -184px -112px;
@@ -163,39 +175,39 @@ em {
 
 .icoBox .item {
   display: flex;
-  gap: 15px;
+  gap: 25px;
 }
 
 .icoBox .submit {
-  background: #1eda69;
+  background: #679cf0;
   padding: 7px 15px;
   border-radius: 17.5px;
   color: #fff;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 5px;
   font-size: 15px;
   font-weight: bold;
 }
 
-.icoBox button::after {
+.icoBox .submit::after {
   content: "";
   display: block;
-  background: url(../images/ico-mamago.png) no-repeat;
-  background-position: -139px 2px;
-  background-size: 300px 450px;
-  width: 16px;
-  height: 20px;
+  background: url(../images/ico-down.png) no-repeat;
+  background-size: contain;
+  width: 7px;
+  height: 12px;
 }
 
 .icoBox .more {
   content: "";
   display: block;
-  background: url(../images/ico-mamago.png) no-repeat;
-  background-position: -51px -193px;
-  background-size: 300px 450px;
-  width: 17px;
-  height: 44px;
+  background: url(../images/ico-more.png) no-repeat;
+  background-size: contain;
+  width: 4px;
+  height: 17px;
+  text-indent: -9999px;
 }
 
 .mainList {
@@ -232,7 +244,7 @@ em {
 
 .listTitle strong {
   font-size: 18px;
-  color: #0fb74c;
+  color: #679cf0;
 }
 .listTitle span {
   font-size: 14px;
@@ -247,4 +259,16 @@ em {
 .listContent span {
   font-size: 16px;
   color: #444;
+}
+
+.icoStar:hover .icoStarOn {
+  display: block;
+}
+
+.icoStar:hover .icoStarOff {
+  display: none;
+}
+
+.icoStarOn {
+  display: none;
 }
