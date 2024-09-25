@@ -19,6 +19,19 @@
       margin: auto;
     }
 
+    .inner {
+      height: 150px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
     button {
       padding: 5px;
       border: none;
@@ -35,9 +48,11 @@
   </style>
   <body>
     <div class="wrap">
-      <input id="code_reddit" type="hidden" value="Một hai ba" />
-      <h2>Một hai ba</h2>
-      <button class="btn" onclick="g_gout()">번역</button>
+      <div class="inner">
+        <input id="code_reddit" type="hidden" value="Một hai ba" />
+        <h2>Một hai ba</h2>
+        <button class="btn" onclick="g_gout()">번역</button>
+      </div>
     </div>
 
     <script src="./index.js"></script>
