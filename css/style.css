@@ -193,6 +193,7 @@ img {
   gap: 5px;
   font-size: 15px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .icoBox .submit::after {
@@ -202,6 +203,10 @@ img {
   background-size: contain;
   width: 7px;
   height: 12px;
+}
+
+.icoBox .submit:hover {
+  background: #346eca;
 }
 
 .icoBox .more {
