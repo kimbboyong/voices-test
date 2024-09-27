@@ -62,6 +62,22 @@ function logAvailableVoices() {
     console.log(`${voice.name} (${voice.lang})`);
   });
 }
+const mainList = document.getElementById("mainList");
+const userText = document.getElementById("userText");
+const textClose = document.querySelector(".textClose");
+
+userText.addEventListener("input", function () {
+  if (userText.value.length > 0) {
+    textClose.classList.add("on");
+  } else {
+    textClose.classList.remove("on");
+  }
+});
+
+textClose.addEventListener("click", function () {
+  userText.value = "";
+  textClose.classList.remove("on");
+});
 
 document.querySelector(".submit").addEventListener("click", function () {
   document.getElementById("code_reddit").value = "Không sao chứ?";
@@ -70,6 +86,10 @@ document.querySelector(".submit").addEventListener("click", function () {
 function g_gout() {
   var t = document.getElementById("code_reddit");
   speech(t.value);
+}
+
+function handleListOn() {
+  mainList.classList.add("on");
 }
 
 logAvailableVoices();

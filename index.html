@@ -33,10 +33,11 @@
             <div class="mainDivide">
               <div class="inputBox">
                 <textarea
+                  id="userText"
                   type="text"
                   placeholder="번역할 내용을 입력하세요."
                 ></textarea>
-                <em></em>
+                <em class="textClose"></em>
               </div>
               <div class="icoBox">
                 <div class="item">
@@ -59,7 +60,7 @@
                     />
                   </figure>
                 </div>
-                <button class="submit">번역</button>
+                <button class="submit" onclick="handleListOn()">번역</button>
               </div>
             </div>
             <div class="mainDivide shadow">
@@ -104,7 +105,7 @@
             </div>
           </div>
         </section>
-        <section class="mainList">
+        <section class="mainList" id="mainList">
           <div class="listButton">
             <span>번역 평가</span>
           </div>
