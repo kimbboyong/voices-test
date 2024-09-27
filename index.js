@@ -74,11 +74,6 @@ userText.addEventListener("input", function () {
   }
 });
 
-textClose.addEventListener("click", function () {
-  userText.value = "";
-  textClose.classList.remove("on");
-});
-
 document.querySelector(".submit").addEventListener("click", function () {
   document.getElementById("code_reddit").value = "Không sao chứ?";
 });
@@ -91,5 +86,12 @@ function g_gout() {
 function handleListOn() {
   mainList.classList.add("on");
 }
+
+textClose.addEventListener("click", function () {
+  userText.value = "";
+  textClose.classList.remove("on");
+  document.getElementById("code_reddit").value = "";
+  mainList.classList.remove("on");
+});
 
 logAvailableVoices();
