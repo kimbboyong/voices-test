@@ -239,7 +239,11 @@ img {
 }
 
 .detailItem {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+}
+
+.detailItem:last-child {
+  margin-bottom: 0;
 }
 
 .listButton span {
