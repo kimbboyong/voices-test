@@ -63,4 +63,13 @@ function logAvailableVoices() {
   });
 }
 
+document.querySelector(".submit").addEventListener("click", function () {
+  document.getElementById("code_reddit").value = "Không sao chứ?";
+});
+
+function g_gout() {
+  var t = document.getElementById("code_reddit");
+  speech(t.value);
+}
+
 logAvailableVoices();
